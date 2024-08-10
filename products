@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Pepperoni pizza",
+            "description": "Tomatoes, Mozzarella, Pepperoni, Barbecue Sauce ",
+            "price": 209,
+            "image": "src/images/pepperoni.png"
+        },
+        {
+            "id": 2,
+            "name": "Pizza Carbonara",
+            "description": "Ham, Alfredo sauce, Mushrooms, Mozzarella, Onions, Bacon",
+            "price": 205,
+            "image":"src/images/karbonara.png"
+        },
+        {
+            "id": 3,
+            "name": "Pizza Margherita",
+            "description": "Domino's sauce, Mozzarella (x2)(double portion of mozzarella",
+            "price":211,
+            "image": "src/images/marharyta.png"
+        }
+            
+    ]
+}

@@ -1,0 +1,97 @@
+.header{
+    display:flex;
+    padding: 20px;
+    background: #db7004;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header-logo{
+    font-size: 20px;
+    color: #ffffff;
+}
+.header .header-cart{
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+}
+h1 {
+    color: #0c0606
+}
+
+.header-menu {
+    background: #222020;
+    color: #000000;
+    padding: 5px 25px;
+}
+
+.header-menu .logo {
+    margin-right: auto;
+}
+.header-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin-left: 30px;
+}
+.header-menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #268fd4;
+}
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-content {
+    padding: 30px 20%;
+}
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .page-title {
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-content .info-block {
+    padding: 20px;
+    display: flex;
+    gap: 35px;
+}
+.card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+}
+
+.main-content .info-block p {
+    font-size: 16px;
+    color: #ffffff;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.main-content .info-block .image {
+    width: 300px;
+    border-radius: 20px;
+    height: auto;
+}
+.card .price {
+    font-size: 18px;
+    color: #e67e22;
+    margin-top: 10px;
+    font-weight: bold;
+}
