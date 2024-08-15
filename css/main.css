@@ -6,14 +6,24 @@
     align-items: center;
 }
 .header .header-logo{
-    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 33px;
     color: #ffffff;
+    align-items: center;
 }
+
+.header .header-logo img {
+    border-radius: 5%;
+    height: 60px;
+    width: auto;
+}
+
 .header .header-cart{
     padding: 5px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
-    background-color: #8;
+    /* background-color: #8; */
 }
 h1 {
     color: #0c0606
@@ -46,15 +56,29 @@ h1 {
 }
 
 .main-content {
-    padding: 30px 20%;
+    padding: 30px 0;
 }
+
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     background-color: rgb(255, 255, 255);
     border: 1px solid #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 300px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
 }
 
 .main-content .page-title {
@@ -73,6 +97,28 @@ h1 {
 .card h3 {
     margin: 15px 0 10px 0;
     font-size: 20px;
+}
+
+.card .description {
+    min-height: 32px;
+}
+
+.card .pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .pricing button.add-to-cart {
+    background-color: #e67e22;
+    color: #ffffff;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .pricing button.add-to-cart:hover {
+    background: #b4621b;
 }
 
 .main-content .info-block p {
@@ -95,19 +141,6 @@ h1 {
     margin-top: 10px;
     font-weight: bold;
 }
-
-article img{
-    width: 200px;
-    
-
-}
-article{
-    width: 250px;
-}
-section{
-    display: flex;
-    justify-content:space-around;
-}
 footer{
     background-color: #000000;
     color:white ;
@@ -116,8 +149,4 @@ footer{
 }
 .pizza{
     width:350px ;
-}
-
-.card button.buy{
-
 }
