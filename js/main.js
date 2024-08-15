@@ -20,10 +20,10 @@ function createCard(product) {
     card.className = 'card';
 
     card.innerHTML = `      
-        <h2>Pizza Carbonara${product.name} </h2>
-        <img src="${product.image}"alt="${product.name}>
+        <h2>${product.name} </h2>
+        <img src="${product.image}"/>
         <p>${product.description}</p>
-        <h3>${product.price}</h3>
+        <h3>${product.price}UAH</h3>
     `;
 
     return card
