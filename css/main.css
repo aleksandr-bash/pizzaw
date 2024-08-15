@@ -13,7 +13,7 @@
     padding: 5px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
-    background-color: aquamarine;
+    background-color: #8;
 }
 h1 {
     color: #0c0606
@@ -116,4 +116,8 @@ footer{
 }
 .pizza{
     width:350px ;
+}
+
+.card button.buy{
+
 }

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://gist.githubusercontent.com/aleksandr-bash/d7be5f7e728b656e0d0542d1dcdefa9e/raw/2577087aa5ded2aa60be7b004ca07906e18e013c/data.json')
+    fetch('https://gist.githubusercontent.com/Mark3r1/e9826d3cc348e77ec1b51ebd426738ab/raw/768ba5744cc5a7c170dddf86b5c4328d3cafe4bf/products.json')
         .then(response => response.json())
         .then(data => {
             const products = data.products;
@@ -19,11 +19,11 @@ function createCard(product) {
     const card = document.createElement('div');
     card.className = 'card';
 
-    card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
+    card.innerHTML = `      
+        <h2>Pizza Carbonara${product.name} </h2>
+        <img src="${product.image}"alt="${product.name}>
         <p>${product.description}</p>
-        <div class="price">$${product.price}</div>
+        <h3>${product.price}</h3>
     `;
 
     return card
