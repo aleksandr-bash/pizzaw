@@ -5,12 +5,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.header .header-logo{
+.header .header-logo {
     display: flex;
     gap: 10px;
     font-size: 33px;
     color: #ffffff;
     align-items: center;
+    cursor: pointer;
 }
 
 .header .header-logo img {
@@ -49,10 +50,27 @@ h1 {
     font-size: 14px;
     color: #268fd4;
 }
-#product-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
+.header-cart {
+    position: relative;
+    display: inline-block;
+}
+
+.header-cart img {
+    height: 40px;
+    width: 40px;
+}
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .main-content {
@@ -60,14 +78,48 @@ h1 {
 }
 
 #product-container {
+    
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.section-title::before {
+    left: 0;
+}
+
+.section-title::after {
+    right: 0;
+}
+
+.section-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
-    justify-content: center;
+    padding: 16px 48px;
+    align-items: stretch;
+}
+
+.section-container:not(:last-child) {
+    margin-bottom: 44px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     border: 1px solid #ffffff;
     border-radius: 8px;
@@ -104,6 +156,8 @@ h1 {
 }
 
 .card .pricing {
+    margin-top: auto;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -115,6 +169,7 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 40px;
 }
 
 .card .pricing button.add-to-cart:hover {
@@ -125,7 +180,7 @@ h1 {
     font-size: 16px;
     color: #000000;
 }
-.card p {
+.card > p {
     font-size: 14px;
     color: #555;
 }
@@ -140,6 +195,7 @@ h1 {
     color: #e67e22;
     margin-top: 10px;
     font-weight: bold;
+    margin: 0;
 }
 footer{
     background-color: #000000;

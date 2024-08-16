@@ -1,0 +1,72 @@
+.main-content {
+    padding: 30px 120px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.remove-from-cart {
+    background-color: rgba(255, 3, 3, 0.623);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#order-form {
+    margin-top: 20px;
+}
+
+#phone-number {
+    padding: 7px 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #6868685d;
+    border-radius: 8px;
+}
+
+#order-button {
+    padding: 10px 20px;
+    background-color: rgba(2, 155, 2, 0.788);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#notification {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

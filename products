@@ -1,26 +1,51 @@
 {
-    "products": [
+    "sections": [
         {
-            "id": 1,
-            "name": "Pepperoni pizza",
-            "description": "Tomatoes, Mozzarella, Pepperoni, Barbecue Sauce ",
-            "price": 209,
-            "image": "https://pizza.od.ua/upload/resize_cache/webp/iblock/62e/4y05ehhgm88eupox5eh111jo1k2e94mq.webp"
+            "name": "Піца",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Домінос Класік",
+                    "description": "Соус для піци та 100% натуральна моцарела, шинка, оливки та гриби.",
+                    "price": 209,
+                    "image": "https://www.dominos-pizza.ro/gallery/fmobile/1634ipar.png"
+                },
+                {
+                    "id": 2,
+                    "name": "Сільський Домінос",
+                    "description": "Вершковий соус, 100% натуральна моцарела, телемея, помідори, цибуля та бекон.",
+                    "price": 205,
+                    "image":"https://www.dominos-pizza.ro/gallery/fmobile/1869ipar.png"
+                },
+                {
+                    "id": 3,
+                    "name": "Домінос Донно",
+                    "description": "Соус для піци та 100% натуральна моцарела, цибуля, зелені оливки, кукурудза та тунець.",
+                    "price":211,
+                    "image": "https://www.dominos-pizza.ro/gallery/fmobile/4411ipar.png"
+                }
+                    
+            ]
         },
         {
-            "id": 2,
-            "name": "Pizza Carbonara",
-            "description": "",
-            "price": 205,
-            "image":"https://adriano.com.ua/wp-content/uploads/2022/08/%D0%9A%D0%B0%D1%80%D0%B1%D0%BE%D0%BD%D0%B0%D1%80%D0%B0.jpeg"
-        },
-        {
-            "id": 3,
-            "name": "Pizza Margherita",
-            "description": "Domino's sauce, Mozzarella (x2)(double portion of mozzarella",
-            "price":211,
-            "image": "https://www.hearthandfirepizza.com/cdn/shop/products/product-beauty-the-margherita.png?v=1656423819"
+            "name": "Кесаділья",
+            "products": [
+                {
+                    "id": 4,
+                    "name": "Кесаділья з курки",
+                    "description": "Тортилья, начинена моцарелою, чеддером, кукурудзою, куркою та зеленим болгарським перцем",
+                    "price": 169,
+                    "image": "https://www.dominos-pizza.ro/gallery/fmobile/4033ipar.png"
+                },
+                {
+                    "id": 5,
+                    "name": "Вегі Кесаділья",
+                    "description": "Тортилья з начинкою з моцарелли, оливками, помідорами, грибами та кукурудзою",
+                    "price": 169,
+                    "image": "https://www.dominos-pizza.ro/gallery/fmobile/4034ipar.png"
+                }
+            ]
         }
-            
     ]
 }
+

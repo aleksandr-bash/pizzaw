@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<lang="en">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pizza</title>
@@ -10,24 +11,26 @@
 <body>
     <header class="header">
 
-        <div class="header-logo">
-            Cool Pizza <img src="img/logo.png">
+        <div class="header-logo"  id="header-logo">
+            <img src="img/logo.png">Cool Pizza 
         </div>
-        
     </header>
-</body>
-<div class="main-content">
-    <h1 class="page-title">Це ваш кошик</h1>
-    <img class="pizza"src="https://png.pngtree.com/png-clipart/20190619/original/pngtree-buy-buy-buy-hand-painted-cartoon-girl-png-image_4001086.jpg">
 
-    <div class="info-block">   
-        <p>У вашому кошику поки що нічого нема</p>
-        <a href="index.html" class="header-cart">Замовити піццу</a>
-        
+    <div class="main-content">
+        <h1>Ваш кошик</h1>
+        <div id="cart-container"></div>
+        <div id="cart-total">
+            <h2>Разом: <span id="total-price">0</span> грн</h2>
+        </div>
+
+        <div id="order-form">
+            <label for="phone-number">Введіть свій номер телефону:</label>
+            <input type="text" id="phone-number" placeholder="+380XXXXXXXXX" required>
+            <button id="order-button">Замовити</button>
+        </div>
+    
+        <div id="notification" class="hidden">Ми передзвонимо вам найближчим часом!</div>
     </div>
-</div>
-
-<footer>
-    <p>Ви можете замовити піццу за цим номером +3809324678</p>
-</footer>
+    <script src="js/cart.js"></script>
+</body>
 </html>
